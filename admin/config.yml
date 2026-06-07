@@ -7,14 +7,14 @@ public_folder: "/images/uploads"
 
 collections:
   - name: "news"
-    label: "Aktuality (Новини)"
+    label: "Aktuality"
     folder: "news"
     create: true
     delete: true
     extension: "json"
     format: "json"
     fields:
-      - {label: "Заголовок новини", name: "title", widget: "string"}
-      - {label: "Дата", name: "date", widget: "date", format: "DD.MM.YYYY"}
-      - {label: "Фотографія (необов'язково)", name: "image", widget: "image", required: false}
-      - {label: "Текст новини", name: "body", widget: "markdown"}
+      - {label: "Názov aktuality", name: "title", widget: "string"}
+      - {label: "Dátum", name: "date", widget: "date", format: "DD.MM.YYYY"}
+      - {label: "Fotografia (nepovinné)", name: "image", widget: "image", required: false}
+      - {label: "Text aktuality", name: "body", widget: "markdown"}
