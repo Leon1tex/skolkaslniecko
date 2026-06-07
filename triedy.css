@@ -1,0 +1,89 @@
+.classes-section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.classes-section h2 {
+    font-size: 36px;
+    color: #2D3748;
+    margin-bottom: 15px;
+}
+
+.classes-intro {
+    font-size: 18px;
+    color: #4A5568;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.classes-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.class-card {
+    background-color: #FFFFFF;
+    padding: 40px 30px;
+    border-radius: 30px;
+    width: 340px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    border-top: 8px solid #FFDE59;
+}
+
+.class-card:nth-child(1) { border-top-color: #FF5A5F; }
+.class-card:nth-child(2) { border-top-color: #FFDE59; }
+.class-card:nth-child(3) { border-top-color: #00C9A7; }
+
+.class-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.class-icon {
+    font-size: 55px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.class-card h3 {
+    font-size: 26px;
+    color: #2D3748;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.class-card p {
+    color: #4A5568;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.class-features {
+    list-style: none;
+    padding: 0;
+}
+
+.class-features li {
+    font-size: 15px;
+    color: #2D3748;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.class-features li::before {
+    content: "⭐";
+    position: absolute;
+    left: 0;
+    top: -2px;
+    font-size: 14px;
+}
