@@ -2,7 +2,8 @@
   "items": [
     {
       "title": "Test",
-      "body": "Dátum test"
+      "body": "Dátum test",
+      "date": "08.06.2026"
     }
   ]
 }
