@@ -18,6 +18,6 @@ collections:
             widget: "list"
             fields:
               - {label: "Názov aktuality", name: "title", widget: "string"}
-              - {label: "Dátum", name: "date", widget: "date", format: "DD.MM.YYYY"}
+              - {label: "Dátum", name: "date", widget: "datetime", format: "DD.MM.YYYY", time_format: false}
               - {label: "Fotografia (nepovinné)", name: "image", widget: "image", required: false}
               - {label: "Text aktuality", name: "body", widget: "text"}
