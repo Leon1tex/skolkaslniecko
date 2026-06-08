@@ -1,7 +1,3 @@
-document.getElementById("enrollBtn").addEventListener("click", function() {
-    alert('Thanx! Form for enrollment is coming soon!');
-});
-
 document.addEventListener("DOMContentLoaded", () => {
     const newsContainer = document.getElementById('news-container');
 
