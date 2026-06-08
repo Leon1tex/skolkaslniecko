@@ -6,15 +6,18 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "news"
+  - name: "news_data"
     label: "Aktuality"
-    folder: "news"
-    create: true
-    delete: true
-    extension: "json"
-    format: "json"
-    fields:
-      - {label: "Názov aktuality", name: "title", widget: "string"}
-      - {label: "Dátum", name: "date", widget: "date", format: "DD.MM.YYYY"}
-      - {label: "Fotografia (nepovinné)", name: "image", widget: "image", required: false}
-      - {label: "Text aktuality", name: "body", widget: "markdown"}
+    files:
+      - label: "Všetky aktuality"
+        name: "news_list"
+        file: "news.json"
+        fields:
+          - label: "Zoznam aktualít"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Názov aktuality", name: "title", widget: "string"}
+              - {label: "Dátum", name: "date", widget: "date", format: "DD.MM.YYYY"}
+              - {label: "Fotografia (nepovinné)", name: "image", widget: "image", required: false}
+              - {label: "Text aktuality", name: "body", widget: "text"}
